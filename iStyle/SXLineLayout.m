@@ -26,10 +26,12 @@
     [super prepareLayout];
     
     // 设置滚动方向(只有流水布局才有这个属性)
-    self.scrollDirection = UICollectionViewScrollDirectionHorizontal;
+    //self.scrollDirection = UICollectionViewScrollDirectionHorizontal;
+    self.scrollDirection = UICollectionViewScrollDirectionVertical;
+    
     
     // 设置cell的大小
-    CGFloat itemWH = self.collectionView.frame.size.height * 0.8;
+    CGFloat itemWH = self.collectionView.frame.size.width * 0.8;
     self.itemSize = CGSizeMake(itemWH, itemWH);
     
     // 设置内边距
@@ -46,17 +48,23 @@
     NSArray *array = [super layoutAttributesForElementsInRect:rect];
     
     // 获得collectionView最中间的x值
-    CGFloat centerX = self.collectionView.contentOffset.x + self.collectionView.frame.size.width * 0.5;
+    //CGFloat centerX = self.collectionView.contentOffset.x + self.collectionView.frame.size.width * 0.5;
+    CGFloat centerY = self.collectionView.contentOffset.y + self.collectionView.frame.size.height * 0.5;
     
     // 在默认布局属性基础上进行微调
     for (UICollectionViewLayoutAttributes *attrs in array) {
         // 计算cell中点x 和 collectionView最中间x值  的差距
-        CGFloat delta = ABS(centerX - attrs.center.x);
+        //CGFloat delta = ABS(centerX - attrs.center.x);
+        CGFloat delta = ABS(centerY - attrs.center.y);
+        
         
         // 利用差距计算出缩放比例（成反比）
-        CGFloat scale = 1 - delta / (self.collectionView.frame.size.width + self.itemSize.width);
+        //CGFloat scale = 1 - delta / (self.collectionView.frame.size.width + self.itemSize.width);
+        CGFloat scale = 1 - delta / (self.collectionView.frame.size.height + self.itemSize.height);
+        
+        NSLog(@"%f",scale);
         attrs.transform = CGAffineTransformMakeScale(scale, scale);
-        //        attrs.transform3D = CATransform3DMakeRotation(scale * M_PI_4, 0, 1, 1);
+        //attrs.transform3D = CATransform3DMakeRotation(scale * M_PI_4, 0, 1, 1);
     }
     
     return array;
@@ -85,17 +93,22 @@
     NSArray *array = [super layoutAttributesForElementsInRect:rect];
     
     // 计算collectionView最终中间的x
-    CGFloat centerX = proposedContentOffset.x + self.collectionView.frame.size.width * 0.5;
+//    CGFloat centerX = proposedContentOffset.x + self.collectionView.frame.size.width * 0.5;
+    CGFloat centerY = proposedContentOffset.y + self.collectionView.frame.size.height * 0.5;
     
     // 计算最小的间距值
     CGFloat minDetal = MAXFLOAT;
     for (UICollectionViewLayoutAttributes *attrs in array) {
-        if (ABS(minDetal) > ABS(attrs.center.x - centerX)) {
-            minDetal = attrs.center.x - centerX;
+//        if (ABS(minDetal) > ABS(attrs.center.x - centerX)) {
+//            minDetal = attrs.center.x - centerX;
+//        }
+        if (ABS(minDetal) > ABS(attrs.center.y - centerY)) {
+            minDetal = attrs.center.y - centerY;
         }
     }
     
     // 在原有offset的基础上进行微调
-    return CGPointMake(proposedContentOffset.x + minDetal, proposedContentOffset.y);
+    //return CGPointMake(proposedContentOffset.x + minDetal, proposedContentOffset.y);
+    return CGPointMake(proposedContentOffset.x , proposedContentOffset.y+ minDetal);
 }
 @end
