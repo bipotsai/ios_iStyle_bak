@@ -1,12 +1,12 @@
 //
-//  ViewController.m
+//  RootViewController.m
 //  iStyle
 //
-//  Created by Bipo Tsai on 7/15/15.
+//  Created by Bipo Tsai on 7/16/15.
 //  Copyright (c) 2015 Bipo Tsai. All rights reserved.
 //
 
-#import "ViewController.h"
+#import "RootViewController.h"
 #import "SXStackLayout.h"
 #import "SXLineLayout.h"
 #import "SXCircleLayout.h"
@@ -22,46 +22,32 @@
 
 #import "ImageCreator.h"
 
-@interface ViewController () <UICollectionViewDataSource, UICollectionViewDelegate>
+@interface RootViewController ()<UICollectionViewDataSource, UICollectionViewDelegate>
 @property (weak, nonatomic) IBOutlet UICollectionView *collectionView;
-@property (nonatomic, strong) NSMutableArray *images;
 @property (nonatomic, strong) NSMutableArray *photos;
-
 @end
 
-@implementation ViewController
+@implementation RootViewController
 
 static NSString *const ID = @"image";
-
-- (NSMutableArray *)images
-{
-    if (!_images) {
-        self.images = [[NSMutableArray alloc] init];
-        
-        for (int i = 1; i<=12; i++) {
-            [self.images addObject:[NSString stringWithFormat:@"%d", i]];
-        }
-    }
-    return _images;
-}
 
 - (NSMutableArray *)photos
 {
     if (!_photos) {
         self.photos = [[NSMutableArray alloc] init];
         // Photos
-//        photo = [MWPhoto photoWithImage:[UIImage imageWithContentsOfFile:[[NSBundle mainBundle] pathForResource:@"photo5" ofType:@"jpg"]]];
-//        photo.caption = @"White Tower";
-//        [self.photos addObject:photo];
-//        photo = [MWPhoto photoWithURL:[NSURL fileURLWithPath:[[NSBundle mainBundle] pathForResource:@"photo2" ofType:@"jpg"]]];
-//        photo.caption = @"The London Eye is a giant Ferris wheel situated on the banks of the River Thames, in London, England.";
-//        [self.photos addObject:photo];
-//        photo = [MWPhoto photoWithURL:[NSURL fileURLWithPath:[[NSBundle mainBundle] pathForResource:@"photo3" ofType:@"jpg"]]];
-//        photo.caption = @"York Floods";
-//        [self.photos addObject:photo];
-//        photo = [MWPhoto photoWithImage:[UIImage imageWithContentsOfFile:[[NSBundle mainBundle] pathForResource:@"photo4" ofType:@"jpg"]]];
-//        photo.caption = @"Campervan";
-//        [self.photos addObject:photo];
+        //        photo = [MWPhoto photoWithImage:[UIImage imageWithContentsOfFile:[[NSBundle mainBundle] pathForResource:@"photo5" ofType:@"jpg"]]];
+        //        photo.caption = @"White Tower";
+        //        [self.photos addObject:photo];
+        //        photo = [MWPhoto photoWithURL:[NSURL fileURLWithPath:[[NSBundle mainBundle] pathForResource:@"photo2" ofType:@"jpg"]]];
+        //        photo.caption = @"The London Eye is a giant Ferris wheel situated on the banks of the River Thames, in London, England.";
+        //        [self.photos addObject:photo];
+        //        photo = [MWPhoto photoWithURL:[NSURL fileURLWithPath:[[NSBundle mainBundle] pathForResource:@"photo3" ofType:@"jpg"]]];
+        //        photo.caption = @"York Floods";
+        //        [self.photos addObject:photo];
+        //        photo = [MWPhoto photoWithImage:[UIImage imageWithContentsOfFile:[[NSBundle mainBundle] pathForResource:@"photo4" ofType:@"jpg"]]];
+        //        photo.caption = @"Campervan";
+        //        [self.photos addObject:photo];
         
         
         ImageCreator *imgCreator = [[ImageCreator alloc] init];
@@ -90,31 +76,9 @@ static NSString *const ID = @"image";
     return _photos;
 }
 
-- (void)viewDidAppear:(BOOL)animated
-{
-    [super viewDidAppear:animated];
-//    CircleViewController *circleview = [[CircleViewController alloc] initWithNibName:@"CircleViewController" bundle:nil];
-//    LineViewController *lineview = [[LineViewController alloc] initWithNibName:@"LineViewController" bundle:nil];
-//    StackViewController *stackview = [[StackViewController alloc] initWithNibName:@"StackViewController" bundle:nil];
-//    
-//    [self presentViewController:circleview animated:YES completion:NULL];
-}
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-
-   
-    
-    
-//    dispatch_async(dispatch_get_main_queue(), ^{
-//        CircleViewController *circleview = [[CircleViewController alloc] initWithNibName:@"CircleViewController" bundle:nil];
-//        LineViewController *lineview = [[LineViewController alloc] initWithNibName:@"LineViewController" bundle:nil];
-//        StackViewController *stackview = [[StackViewController alloc] initWithNibName:@"StackViewController" bundle:nil];
-//        
-//        [self presentViewController:circleview animated:YES completion:^{}];
-//    });
-
-    
     //SXCircleLayout *layout = [[SXCircleLayout alloc] init];
     SXLineLayout *layout = [[SXLineLayout alloc] init];
     //SXStackLayout *layout = [[SXStackLayout alloc] init];
@@ -136,9 +100,6 @@ static NSString *const ID = @"image";
     [self.view addSubview:collectionView];
     self.collectionView = collectionView;
 
-    
-    
-    
 }
 
 - (void)didReceiveMemoryWarning {
@@ -155,12 +116,12 @@ static NSString *const ID = @"image";
 
 - (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath
 {
-//    SXImageCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:ID forIndexPath:indexPath];
-//    //cell.image = self.images[indexPath.item];
-//    MWPhoto *photo = (MWPhoto*)self.photos[indexPath.item];
-//    [photo loadUnderlyingImageAndNotify];
-//    cell.image = photo;
-
+    //    SXImageCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:ID forIndexPath:indexPath];
+    //    //cell.image = self.images[indexPath.item];
+    //    MWPhoto *photo = (MWPhoto*)self.photos[indexPath.item];
+    //    [photo loadUnderlyingImageAndNotify];
+    //    cell.image = photo;
+    
     MWGridCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:@"GridCell" forIndexPath:indexPath];
     if (!cell) {
         cell = [[MWGridCell alloc] init];
@@ -172,7 +133,7 @@ static NSString *const ID = @"image";
     //cell.isSelected = [_browser photoIsSelectedAtIndex:indexPath.row];
     cell.index = indexPath.row;
     [photo loadUnderlyingImageAndNotify];
-
+    
     return cell;
 }
 
@@ -189,5 +150,6 @@ static NSString *const ID = @"image";
     // 直接将cell删除
     [self.collectionView deleteItemsAtIndexPaths:@[indexPath]];
 }
+
 
 @end

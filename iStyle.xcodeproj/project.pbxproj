@@ -14,6 +14,21 @@
 		6E3015261B55EE2F0070641F /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6E3015251B55EE2F0070641F /* Images.xcassets */; };
 		6E3015291B55EE2F0070641F /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6E3015271B55EE2F0070641F /* LaunchScreen.xib */; };
 		6E3015351B55EE2F0070641F /* iStyleTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E3015341B55EE2F0070641F /* iStyleTests.m */; };
+		6E8EBEDD1B5754BD00BC2A62 /* SXCircleLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E8EBEDC1B5754BD00BC2A62 /* SXCircleLayout.m */; };
+		6E8EBEE01B5754E100BC2A62 /* SXLineLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E8EBEDF1B5754E100BC2A62 /* SXLineLayout.m */; };
+		6E8EBEE31B5754EB00BC2A62 /* SXStackLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E8EBEE21B5754EB00BC2A62 /* SXStackLayout.m */; };
+		6E8EBEEA1B57550300BC2A62 /* SXImageCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E8EBEE71B57550300BC2A62 /* SXImageCell.m */; };
+		6E8EBEEB1B57550300BC2A62 /* SXImageCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6E8EBEE81B57550300BC2A62 /* SXImageCell.xib */; };
+		6ED40CDD1B57901800C99C59 /* CircleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6ED40CDB1B57901800C99C59 /* CircleViewController.m */; };
+		6ED40CDE1B57901800C99C59 /* CircleViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6ED40CDC1B57901800C99C59 /* CircleViewController.xib */; };
+		6ED40CE21B57932B00C99C59 /* LineViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6ED40CE01B57932B00C99C59 /* LineViewController.m */; };
+		6ED40CE31B57932B00C99C59 /* LineViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6ED40CE11B57932B00C99C59 /* LineViewController.xib */; };
+		6ED40CE71B57990D00C99C59 /* StackViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6ED40CE51B57990D00C99C59 /* StackViewController.m */; };
+		6ED40CE81B57990D00C99C59 /* StackViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6ED40CE61B57990D00C99C59 /* StackViewController.xib */; };
+		6ED40CEB1B57B7F700C99C59 /* ImageCreator.m in Sources */ = {isa = PBXBuildFile; fileRef = 6ED40CEA1B57B7F700C99C59 /* ImageCreator.m */; };
+		6ED40CEF1B57C19000C99C59 /* RootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6ED40CED1B57C19000C99C59 /* RootViewController.m */; };
+		6ED40CF01B57C19000C99C59 /* RootViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6ED40CEE1B57C19000C99C59 /* RootViewController.xib */; };
+		A85C5B5C91208D46DBA4B069 /* libPods-iStyle.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C59BB24437792C1FDF23CB89 /* libPods-iStyle.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +55,32 @@
 		6E30152E1B55EE2F0070641F /* iStyleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = iStyleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		6E3015331B55EE2F0070641F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6E3015341B55EE2F0070641F /* iStyleTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = iStyleTests.m; sourceTree = "<group>"; };
+		6E8EBEDB1B5754BD00BC2A62 /* SXCircleLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SXCircleLayout.h; sourceTree = "<group>"; };
+		6E8EBEDC1B5754BD00BC2A62 /* SXCircleLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SXCircleLayout.m; sourceTree = "<group>"; };
+		6E8EBEDE1B5754E100BC2A62 /* SXLineLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SXLineLayout.h; sourceTree = "<group>"; };
+		6E8EBEDF1B5754E100BC2A62 /* SXLineLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SXLineLayout.m; sourceTree = "<group>"; };
+		6E8EBEE11B5754EB00BC2A62 /* SXStackLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SXStackLayout.h; sourceTree = "<group>"; };
+		6E8EBEE21B5754EB00BC2A62 /* SXStackLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SXStackLayout.m; sourceTree = "<group>"; };
+		6E8EBEE61B57550300BC2A62 /* SXImageCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SXImageCell.h; sourceTree = "<group>"; };
+		6E8EBEE71B57550300BC2A62 /* SXImageCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SXImageCell.m; sourceTree = "<group>"; };
+		6E8EBEE81B57550300BC2A62 /* SXImageCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SXImageCell.xib; sourceTree = "<group>"; };
+		6ED40CDA1B57901800C99C59 /* CircleViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CircleViewController.h; sourceTree = "<group>"; };
+		6ED40CDB1B57901800C99C59 /* CircleViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CircleViewController.m; sourceTree = "<group>"; };
+		6ED40CDC1B57901800C99C59 /* CircleViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CircleViewController.xib; sourceTree = "<group>"; };
+		6ED40CDF1B57932B00C99C59 /* LineViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LineViewController.h; sourceTree = "<group>"; };
+		6ED40CE01B57932B00C99C59 /* LineViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LineViewController.m; sourceTree = "<group>"; };
+		6ED40CE11B57932B00C99C59 /* LineViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LineViewController.xib; sourceTree = "<group>"; };
+		6ED40CE41B57990D00C99C59 /* StackViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StackViewController.h; sourceTree = "<group>"; };
+		6ED40CE51B57990D00C99C59 /* StackViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StackViewController.m; sourceTree = "<group>"; };
+		6ED40CE61B57990D00C99C59 /* StackViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = StackViewController.xib; sourceTree = "<group>"; };
+		6ED40CE91B57B7F700C99C59 /* ImageCreator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImageCreator.h; sourceTree = "<group>"; };
+		6ED40CEA1B57B7F700C99C59 /* ImageCreator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImageCreator.m; sourceTree = "<group>"; };
+		6ED40CEC1B57C19000C99C59 /* RootViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RootViewController.h; sourceTree = "<group>"; };
+		6ED40CED1B57C19000C99C59 /* RootViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RootViewController.m; sourceTree = "<group>"; };
+		6ED40CEE1B57C19000C99C59 /* RootViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RootViewController.xib; sourceTree = "<group>"; };
+		9D563154F186782D0C6656CE /* Pods-iStyle.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iStyle.release.xcconfig"; path = "Pods/Target Support Files/Pods-iStyle/Pods-iStyle.release.xcconfig"; sourceTree = "<group>"; };
+		B098CE3C9AAB193ADF942458 /* Pods-iStyle.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iStyle.debug.xcconfig"; path = "Pods/Target Support Files/Pods-iStyle/Pods-iStyle.debug.xcconfig"; sourceTree = "<group>"; };
+		C59BB24437792C1FDF23CB89 /* libPods-iStyle.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-iStyle.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,6 +88,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A85C5B5C91208D46DBA4B069 /* libPods-iStyle.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -66,6 +108,8 @@
 				6E3015171B55EE2F0070641F /* iStyle */,
 				6E3015311B55EE2F0070641F /* iStyleTests */,
 				6E3015161B55EE2F0070641F /* Products */,
+				B09FE409BAB7A9CEF9AF6050 /* Pods */,
+				C4E24837533DE537BB9F2E9C /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -81,14 +125,32 @@
 		6E3015171B55EE2F0070641F /* iStyle */ = {
 			isa = PBXGroup;
 			children = (
+				6E8EBEDA1B57546600BC2A62 /* SXPhotoShow */,
 				6E30151C1B55EE2F0070641F /* AppDelegate.h */,
 				6E30151D1B55EE2F0070641F /* AppDelegate.m */,
+				6E8EBEE61B57550300BC2A62 /* SXImageCell.h */,
+				6E8EBEE71B57550300BC2A62 /* SXImageCell.m */,
+				6E8EBEE81B57550300BC2A62 /* SXImageCell.xib */,
+				6ED40CDF1B57932B00C99C59 /* LineViewController.h */,
+				6ED40CE01B57932B00C99C59 /* LineViewController.m */,
+				6ED40CE11B57932B00C99C59 /* LineViewController.xib */,
 				6E30151F1B55EE2F0070641F /* ViewController.h */,
 				6E3015201B55EE2F0070641F /* ViewController.m */,
 				6E3015221B55EE2F0070641F /* Main.storyboard */,
 				6E3015251B55EE2F0070641F /* Images.xcassets */,
 				6E3015271B55EE2F0070641F /* LaunchScreen.xib */,
 				6E3015181B55EE2F0070641F /* Supporting Files */,
+				6ED40CDA1B57901800C99C59 /* CircleViewController.h */,
+				6ED40CDB1B57901800C99C59 /* CircleViewController.m */,
+				6ED40CDC1B57901800C99C59 /* CircleViewController.xib */,
+				6ED40CE41B57990D00C99C59 /* StackViewController.h */,
+				6ED40CE51B57990D00C99C59 /* StackViewController.m */,
+				6ED40CE61B57990D00C99C59 /* StackViewController.xib */,
+				6ED40CE91B57B7F700C99C59 /* ImageCreator.h */,
+				6ED40CEA1B57B7F700C99C59 /* ImageCreator.m */,
+				6ED40CEC1B57C19000C99C59 /* RootViewController.h */,
+				6ED40CED1B57C19000C99C59 /* RootViewController.m */,
+				6ED40CEE1B57C19000C99C59 /* RootViewController.xib */,
 			);
 			path = iStyle;
 			sourceTree = "<group>";
@@ -119,6 +181,36 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		6E8EBEDA1B57546600BC2A62 /* SXPhotoShow */ = {
+			isa = PBXGroup;
+			children = (
+				6E8EBEE11B5754EB00BC2A62 /* SXStackLayout.h */,
+				6E8EBEE21B5754EB00BC2A62 /* SXStackLayout.m */,
+				6E8EBEDE1B5754E100BC2A62 /* SXLineLayout.h */,
+				6E8EBEDF1B5754E100BC2A62 /* SXLineLayout.m */,
+				6E8EBEDB1B5754BD00BC2A62 /* SXCircleLayout.h */,
+				6E8EBEDC1B5754BD00BC2A62 /* SXCircleLayout.m */,
+			);
+			name = SXPhotoShow;
+			sourceTree = "<group>";
+		};
+		B09FE409BAB7A9CEF9AF6050 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B098CE3C9AAB193ADF942458 /* Pods-iStyle.debug.xcconfig */,
+				9D563154F186782D0C6656CE /* Pods-iStyle.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		C4E24837533DE537BB9F2E9C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C59BB24437792C1FDF23CB89 /* libPods-iStyle.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -126,9 +218,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 6E3015381B55EE2F0070641F /* Build configuration list for PBXNativeTarget "iStyle" */;
 			buildPhases = (
+				9F73E31AA644AE33669001C1 /* Check Pods Manifest.lock */,
 				6E3015111B55EE2F0070641F /* Sources */,
 				6E3015121B55EE2F0070641F /* Frameworks */,
 				6E3015131B55EE2F0070641F /* Resources */,
+				75CB7693197C883E464B12E0 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -199,8 +293,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6ED40CDE1B57901800C99C59 /* CircleViewController.xib in Resources */,
 				6E3015241B55EE2F0070641F /* Main.storyboard in Resources */,
+				6ED40CF01B57C19000C99C59 /* RootViewController.xib in Resources */,
 				6E3015291B55EE2F0070641F /* LaunchScreen.xib in Resources */,
+				6E8EBEEB1B57550300BC2A62 /* SXImageCell.xib in Resources */,
+				6ED40CE81B57990D00C99C59 /* StackViewController.xib in Resources */,
+				6ED40CE31B57932B00C99C59 /* LineViewController.xib in Resources */,
 				6E3015261B55EE2F0070641F /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -214,13 +313,55 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		75CB7693197C883E464B12E0 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-iStyle/Pods-iStyle-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9F73E31AA644AE33669001C1 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		6E3015111B55EE2F0070641F /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				6E3015211B55EE2F0070641F /* ViewController.m in Sources */,
+				6ED40CE21B57932B00C99C59 /* LineViewController.m in Sources */,
+				6ED40CEF1B57C19000C99C59 /* RootViewController.m in Sources */,
 				6E30151E1B55EE2F0070641F /* AppDelegate.m in Sources */,
+				6ED40CE71B57990D00C99C59 /* StackViewController.m in Sources */,
+				6E8EBEE01B5754E100BC2A62 /* SXLineLayout.m in Sources */,
+				6E8EBEE31B5754EB00BC2A62 /* SXStackLayout.m in Sources */,
+				6E8EBEDD1B5754BD00BC2A62 /* SXCircleLayout.m in Sources */,
+				6ED40CDD1B57901800C99C59 /* CircleViewController.m in Sources */,
+				6ED40CEB1B57B7F700C99C59 /* ImageCreator.m in Sources */,
+				6E8EBEEA1B57550300BC2A62 /* SXImageCell.m in Sources */,
 				6E30151B1B55EE2F0070641F /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -347,6 +488,7 @@
 		};
 		6E3015391B55EE2F0070641F /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B098CE3C9AAB193ADF942458 /* Pods-iStyle.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = iStyle/Info.plist;
@@ -357,6 +499,7 @@
 		};
 		6E30153A1B55EE2F0070641F /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9D563154F186782D0C6656CE /* Pods-iStyle.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = iStyle/Info.plist;
@@ -418,6 +561,7 @@
 				6E30153A1B55EE2F0070641F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		6E30153B1B55EE2F0070641F /* Build configuration list for PBXNativeTarget "iStyleTests" */ = {
 			isa = XCConfigurationList;
@@ -426,6 +570,7 @@
 				6E30153D1B55EE2F0070641F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
